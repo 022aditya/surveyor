@@ -17,19 +17,19 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_dependency('rails', '>= 3.2')
+  s.add_dependency('rails', '4.1.0')
   s.add_dependency('haml', '~> 4.0')
   s.add_dependency('sass')
   s.add_dependency('formtastic', '~> 2.2.1') # 2.1 requries actionpack 3.0
   s.add_dependency('uuidtools', '~> 2.1')
   s.add_dependency('mustache', '~> 0.99')
   s.add_dependency('rabl', '~> 0.6')
-  s.add_dependency('jquery-rails', '4.0.3')
+  s.add_dependency('jquery-rails')
 
   s.add_development_dependency('yard')
   s.add_development_dependency('rake')
   s.add_development_dependency('sqlite3')
-  s.add_development_dependency('bundler', '~> 1.8.3')
+  s.add_development_dependency('bundler', '1.8.3')
   s.add_development_dependency('rspec-rails', '~> 2.14.2')
   s.add_development_dependency('capybara', '~> 2.2.1')
   s.add_development_dependency('launchy', '~> 2.4.2')
